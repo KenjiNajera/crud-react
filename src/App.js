@@ -1,24 +1,30 @@
-import logo from './logo.svg';
 import './App.css';
+import Listar from "./components/list";
+import editarEmpl from "./components/editar";
+import Formulario from "./components/form";
 
+import { Route,BrowserRouter as Router,Link } from "react-router-dom";
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <Router>
+    <nav className="navbar navbar-expand-lg navbar-light bg-light">
+         <div className="nav navbar-nav">
+             <Link className="nav-item nav-link active" to={"/"}>CRUD Empleado</Link>
+             
+             
+         </div>
+    </nav>
+    <div className="container">
+    
+     <Route exact path="/" component={Listar}></Route>
+     
+     <Route path="/edituser/:id" component={editarEmpl}></Route>
+     <Route path="/add" component={Formulario}></Route>
+     
     </div>
+
+
+    </Router>
   );
 }
 
