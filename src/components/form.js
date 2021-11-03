@@ -16,7 +16,7 @@ const Formulario = ({history})=> {
   };
   
   return (
-    <>
+    <div>
       <div className="container">
         <div className="row">
           <div className="col"></div>
@@ -133,7 +133,7 @@ const Formulario = ({history})=> {
                       <Field
                         type="date"
                         className="form-control"
-                        id="FechaIngreso"
+                        id="fechaIngreso"
                         name="fechaIngreso"
                         value={values.fechaIngreso}
                       />
@@ -158,7 +158,7 @@ const Formulario = ({history})=> {
           <div className="col"></div>
         </div>
       </div>
-    </>
+    </div>
   );
 
 
