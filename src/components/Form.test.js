@@ -2,7 +2,7 @@ import { render, screen,fireEvent } from '@testing-library/react'
 import '@testing-library/jest-dom/extend-expect' 
 import React from 'react' 
 import { Route, BrowserRouter as Router, Link } from "react-router-dom";
-import Formulario from "../src/components/Form.js";
+import Formulario from "src/components/form.js";
 // con que comando lo ejecutas? npm test dame permiso para escribir  como se hace? XD ejecuta el comandoxd
 //ejecutalo asixd
 test('renderizar formulario', () => {
