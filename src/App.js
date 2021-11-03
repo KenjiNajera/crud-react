@@ -1,5 +1,5 @@
 import "./App.css";
-import Listar from "./components/List.js";
+import Listar from "../src/components/List.js";
 import editarEmpl from "./components/Edit.js";
 import Formulario from "./components/Form.js";
 
