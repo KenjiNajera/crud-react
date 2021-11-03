@@ -2,8 +2,9 @@ import { render, screen,fireEvent } from '@testing-library/react'
 import '@testing-library/jest-dom/extend-expect' 
 import React from 'react' 
 import { Route, BrowserRouter as Router, Link } from "react-router-dom";
-import Form from '././Form.js'
-
+import Form from "../components/Form.js";
+// con que comando lo ejecutas? npm test dame permiso para escribir  como se hace? XD ejecuta el comandoxd
+//ejecutalo asixd
 test('renderizar formulario', () => {
    
    render(<Router><Form/></Router>)
@@ -17,6 +18,5 @@ test('renderizar formulario', () => {
    fireEvent.change(inputCorreo, {target:{ value:"kenji@test.com"}})
    fireEvent.change(inputFechaIngreso, {target:{ value: new Date().toISOString().split("T")[0] }})
    fireEvent.click(btnSub)
-   
 });
 
